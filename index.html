@@ -1,219 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NGP9F0B2F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion World - Home</title>
 
-  gtag('config', 'G-8NGP9F0B2F');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Style Fashion</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{
+    background-image:url('https://i.ibb.co/Np5rcG3/fabric-texture.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+    color:#fff;
+}
+nav{
+    background:rgba(0,0,0,0.6);
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
+nav a:hover{text-decoration:underline;}
+.hero{text-align:center;padding:80px 20px;}
+.hero h1{font-size:46px;}
+.btn{
+    background:#ff9800;color:#fff;padding:12px 25px;
+    display:inline-block;margin-top:20px;border-radius:5px;text-decoration:none;
+}
+@media(max-width:600px){.hero h1{font-size:32px;}}
+</style>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background: #f5f5f5;
-            color: #333;
-        }
-
-        /* Navbar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 16px;
-        }
-
-        nav ul li a:hover {
-            color: #000;
-            font-weight: bold;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-            height: 75vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            color: #fff;
-            text-shadow: 0 3px 10px rgba(0,0,0,0.6);
-        }
-
-        /* Products Section */
-        .products {
-            padding: 60px 40px;
-            text-align: center;
-        }
-
-        .products h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-        }
-
-        .product-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 30px;
-        }
-
-        .product {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        .product img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .product h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        .product p {
-            font-size: 16px;
-            color: #444;
-        }
-
-        .shop-btn {
-            margin-top: 30px;
-        }
-
-        .shop-btn a {
-            background: #111;
-            color: #fff;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-
-        .shop-btn a:hover {
-            background: #333;
-        }
-
-        /* Extra Paragraph */
-        .info-text {
-            text-align: center;
-            padding: 30px 40px;
-            font-size: 18px;
-            color: #555;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">Urban Style Fashion</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Discover Your Style</h1>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products">
-        <h2>Featured Products</h2>
-
-        <div class="product-container">
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1520975891768-9430b4750c8e?auto=format&fit=crop&w=600&q=80" alt="Denim Jacket">
-                <h3>Denim Jacket</h3>
-                <p>$49.99</p>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=600&q=80" alt="Hoodie">
-                <h3>Street Hoodie</h3>
-                <p>$39.99</p>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=600&q=80" alt="Sneakers">
-                <h3>White Sneakers</h3>
-                <p>$59.99</p>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="T-shirt">
-                <h3>Cotton T-Shirt</h3>
-                <p>$19.99</p>
-            </div>
-
-        </div>
-
-        <div class="shop-btn">
-            <a href="#">Shop Now</a>
-        </div>
-    </section>
-
-    <!-- Paragraph Section -->
-    <div class="info-text">
-        Welcome to Urban Style Fashion — where modern design meets effortless comfort. Explore our latest arrivals and discover clothing that fits your style perfectly.
+<nav>
+    <h2>Fashion World</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="payment.html">Payment</a>
     </div>
+</nav>
+
+<section class="hero">
+    <h1>Discover Your Style</h1>
+    <p>Trendy outfits that make you feel confident.</p>
+    <a class="btn" href="products.html">Shop Now</a>
+</section>
 
 </body>
 </html>
