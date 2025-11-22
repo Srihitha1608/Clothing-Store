@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion World - Products</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{
+    background-image:url('https://i.ibb.co/Np5rcG3/fabric-texture.jpg');
+    background-size:cover;background-attachment:fixed;color:#fff;
+}
+nav{
+    background:rgba(0,0,0,0.6);padding:15px;display:flex;
+    justify-content:space-between;align-items:center;
+}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
+nav a:hover{text-decoration:underline;}
+.container{width:90%;margin:auto;padding:20px;}
+.products{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;
+}
+.product-card{
+    background:rgba(0,0,0,0.5);padding:20px;border-radius:10px;text-align:center;
+}
+.product-card img{width:100%;border-radius:10px;}
+.btn{
+    background:#ff9800;color:#fff;padding:10px 25px;
+    margin-top:10px;display:inline-block;border-radius:5px;text-decoration:none;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <h2>Fashion World</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="payment.html">Payment</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>Our Collection</h1>
+
+    <div class="products">
+
+        <div class="product-card">
+            <img src="https://i.ibb.co/mtj97SM/men-shirt.jpg">
+            <h2>Men Shirt</h2>
+            <p>₹799</p>
+            <a class="btn" href="payment.html">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.ibb.co/DpNDGBW/women-dress.jpg">
+            <h2>Women Dress</h2>
+            <p>₹1299</p>
+            <a class="btn" href="payment.html">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.ibb.co/wJHr8fN/hoodie.jpg">
+            <h2>Hoodie</h2>
+            <p>₹999</p>
+            <a class="btn" href="payment.html">Add to Cart</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
